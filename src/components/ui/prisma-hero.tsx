@@ -88,14 +88,11 @@ const PrismaHero = () => {
     <section className="h-[90vh] w-full p-4">
       <div className="relative h-full w-full overflow-hidden rounded-2xl md:rounded-[2rem]">
         
-        {/* Background video */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 h-full w-full object-cover"
-          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_170732_8a9ccda6-5cff-4628-b164-059c500a2b41.mp4"
+        {/* Background image */}
+        <img
+          className="absolute inset-0 h-full w-full object-cover object-top"
+          src="/alim_hero.jpg"
+          alt="Alim Demir"
         />
 
         {/* Noise overlay */}
@@ -131,7 +128,7 @@ const PrismaHero = () => {
                 className="font-medium leading-[0.85] tracking-[-0.07em] text-[20vw] sm:text-[18vw] md:text-[16vw] lg:text-[14vw] xl:text-[13vw] 2xl:text-[14vw]"
                 style={{ color: "#E1E0CC" }}
               >
-                <WordsPullUp text="Alim Demir" showAsterisk />
+                <WordsPullUp text="Alim Demir" showAsterisk={false} />
               </h1>
             </div>
 
