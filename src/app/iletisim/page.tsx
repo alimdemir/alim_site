@@ -18,7 +18,7 @@ export default function Iletisim() {
             <div className="space-y-4">
               <div className="flex items-center gap-4 text-lg">
                 <span className="font-semibold w-24">Email:</span>
-                <a href="mailto:iletisim@alimdemir.com" className="hover:text-primary transition-colors">iletisim@alimdemir.com</a>
+                <a href="mailto:demiralim30@gmail.com" className="hover:text-primary transition-colors">demiralim30@gmail.com</a>
               </div>
               <div className="flex items-center gap-4 text-lg">
                 <span className="font-semibold w-24">Konum:</span>
@@ -28,20 +28,24 @@ export default function Iletisim() {
           </div>
           
           <div className="bg-card border border-border/50 p-8 rounded-2xl">
-            <form className="space-y-6">
+            <form action="https://formsubmit.co/demiralim30@gmail.com" method="POST" className="space-y-6">
+              {/* FormSubmit Configuration */}
+              <input type="hidden" name="_subject" value="Portfolyo Sitesinden Yeni İletişim Formu Mesajı!" />
+              <input type="hidden" name="_captcha" value="false" />
+
               <div className="space-y-2">
                 <label htmlFor="name" className="text-sm font-medium">Adınız</label>
-                <input type="text" id="name" className="w-full bg-background border border-border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-white/20" placeholder="John Doe" />
+                <input type="text" name="name" id="name" required className="w-full bg-background border border-border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-white/20" placeholder="İsminiz" />
               </div>
               <div className="space-y-2">
                 <label htmlFor="email" className="text-sm font-medium">E-posta</label>
-                <input type="email" id="email" className="w-full bg-background border border-border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-white/20" placeholder="john@example.com" />
+                <input type="email" name="email" id="email" required className="w-full bg-background border border-border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-white/20" placeholder="E-posta Adresiniz" />
               </div>
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-medium">Mesajınız</label>
-                <textarea id="message" rows={4} className="w-full bg-background border border-border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-white/20" placeholder="Projenizden bahsedin..."></textarea>
+                <textarea id="message" name="message" required rows={4} className="w-full bg-background border border-border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-white/20" placeholder="Projenizden veya fikrinizden bahsedin..."></textarea>
               </div>
-              <button type="button" className="w-full bg-white text-black font-semibold py-3 rounded-lg hover:bg-white/90 transition-colors">
+              <button type="submit" className="w-full bg-white text-black font-semibold py-3 rounded-lg hover:bg-white/90 transition-colors">
                 Gönder
               </button>
             </form>

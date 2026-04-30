@@ -65,12 +65,12 @@ function Hero() {
           </div>
           <div className="flex flex-row gap-3">
             <Button size="lg" className="gap-4" variant="outline" asChild>
-              <a href="mailto:iletisim@alimdemir.com">
+              <a href="mailto:demiralim30@gmail.com">
                 Görüşme Ayarla <PhoneCall className="w-4 h-4" />
               </a>
             </Button>
             <Button size="lg" className="gap-4" asChild>
-              <a href="#projects">
+              <a href="/projeler">
                 Projeleri İncele <MoveRight className="w-4 h-4" />
               </a>
             </Button>

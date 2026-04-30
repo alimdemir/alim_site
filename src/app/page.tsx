@@ -1,6 +1,7 @@
 "use client";
 
 import { PrismaHero } from "@/components/ui/prisma-hero";
+import { Navbar } from "@/components/ui/navbar";
 import { SplineScene } from "@/components/ui/splite";
 import { Card } from "@/components/ui/card";
 import { Spotlight } from "@/components/ui/spotlight";
@@ -9,6 +10,9 @@ import { Hero as AnimatedHero } from "@/components/ui/animated-hero";
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
+      {/* Global Navbar */}
+      <Navbar />
+
       {/* Hero Section */}
       <PrismaHero />
 
