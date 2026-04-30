@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,6 +27,9 @@ export default function RootLayout({
     <html lang="tr" className={`dark ${geistSans.variable} ${geistMono.variable} antialiased`}>
       <body className="bg-background text-foreground min-h-screen">
         {children}
+        <Script id="crisp-widget" strategy="afterInteractive">
+          {`window.$crisp=[];window.CRISP_WEBSITE_ID="49dd1911-33be-447b-8fa3-49f5559e9ea3";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`}
+        </Script>
       </body>
     </html>
   );
