@@ -97,8 +97,8 @@ const PrismaHero = () => {
         
         {/* Background image */}
         <img
-          className="absolute inset-0 h-full w-full object-cover object-[center_70%]"
-          src="/alim_hero.jpg"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+          src="/hero_new.jpg"
           alt="Alim Demir"
         />
 
